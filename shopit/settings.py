@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'category',
-    'home',
+    #'home',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -70,6 +71,10 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'shopit.wsgi.application'
+
+# custom user model
+
+AUTH_USER_MODEL = 'accounts.Account'
 
 
 # Database
@@ -124,4 +129,3 @@ STATIC_ROOT = BASE_DIR / 'static'
 STATICFILES_DIRS = [
     'shopit/static',
 ]
-
